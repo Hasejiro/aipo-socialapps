@@ -4,6 +4,7 @@
 		title="Simple Chat"
 		description="簡単なチャットを楽しむやつ。テストアプリ">
 		<Require feature="osapi"/>
+		<Optional feature="aipostyle">
 	</ModulePrefs>
 	<Content type="html"><![CDATA[
 		Hello, <span id="user"></span>!
