@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Hello,world">
+	<ModulePrefs title="Button Test">
 		<Require feature="osapi"/>
 		<Require feature="views"/>
 		<Require feature="aipostyle"/>
