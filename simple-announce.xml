@@ -7,6 +7,21 @@
 		<Require feature="dynamic-height"/>
 	</ModulePrefs>
 	<UserPref name="version" datatype="hidden"/>
+	<Content type="html" view="home,canvas"><![CDATA[
+		<script type="text/javascript">
+		// バージョン情報
+		var version = "0.1";
+
+		// フォーム設定
+		var announcementCheck = false;
+		var announcementNotice = "告知を書く(100文字まで)";
+
+		// アクティビティ
+		var activity_event = "新しい告知が増えました。";
+		
+		</script>
+		]]>
+	</Content>
 	<Content type="html" view="home"><![CDATA[
 		<div class="aipostyle">
 			<h1>現在、告知事項はありません。</h1>
