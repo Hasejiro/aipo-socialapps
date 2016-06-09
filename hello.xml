@@ -2,8 +2,9 @@
 <Module>
 	<ModulePrefs title="Hello,world">
 		<Require feature="osapi"/>
+		<Require feature="views"/>
 	</ModulePrefs>
-	<Content type="html"><![CDATA[
+	<Content type="html" view="home"><![CDATA[
 		Hello, <span id="user"></span>!
 		<script type="text/javascript">
 			function init() {
