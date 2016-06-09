@@ -4,6 +4,17 @@
 		<Require feature="osapi"/>
 		<Require feature="views"/>
 	</ModulePrefs>
+	<UserPref name="version" datatype="hidden"/>
+	<Content type="html" view="popup,home,canvas"><![CDATA[
+		<script type="text/javascript">
+		var version = "0.1";
+		</script>
+		]]>
+	</Content>
+	<Content type="html" view="popup"><![CDATA[
+		なにこれ
+		]]>
+	</Content>
 	<Content type="html" view="home"><![CDATA[
 		Hello, <span id="user"></span>!
 		通常画面テスト
