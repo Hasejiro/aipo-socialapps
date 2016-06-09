@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Hello,world">
+		<Require feature="osapi"/>
+		<Require feature="views"/>
+	</ModulePrefs>
+	<UserPref name="version" datatype="hidden"/>
+	<Content type="html" view="home"><![CDATA[
+		通常画面テスト
+		<p>通常画面</p>
+		]]>
+	</Content>
+	<Content type="html" view="canvas"><![CDATA[
+		最大化状態テスト
+		<input type="text">
+		<input type="button" value="Test">
+		<script type="text/javascript">
+			gadgets.util.registerOnLoadHandler();
+		</script>
+		]]>
+	</Content>
+</Module>
