@@ -7,9 +7,7 @@
 	<UserPref name="version" datatype="hidden"/>
 	<Content type="html" view="home"><![CDATA[
 		通常画面テスト
-		<script type="text/javascript">
-			gadgets.util.registerOnLoadHandler();
-		</script>
+		<p>通常画面</p>
 		]]>
 	</Content>
 	<Content type="html" view="canvas"><![CDATA[
