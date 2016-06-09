@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Hello,world">
+		<Require feature="osapi"/>
+		<Require feature="views"/>
+		<Require feature="aipostyle"/>
+	</ModulePrefs>
+	<UserPref name="version" datatype="hidden"/>
+	<Content type="html"><![CDATA[
+		Hello, <span id="user"></span>!
+		<button>テスト</button>
+		<script type="text/javascript">
+			function init() {
+				osapi.people.getViewer().execute(function (response) {
+					document.getElementById("user").innerHTML = response.displayName;
+				});
+			}
+
+			gadgets.util.registerOnLoadHandler(init);
+		</script>
+		]]>
+	</Content>
+</Module>
