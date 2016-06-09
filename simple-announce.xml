@@ -4,12 +4,16 @@
 		<Require feature="osapi"/>
 		<Require feature="views"/>
 		<Require feature="aipostyle"/>
+		<Require feature="dynamic-height"/>
 	</ModulePrefs>
 	<UserPref name="version" datatype="hidden"/>
 	<Content type="html" view="home"><![CDATA[
 		<div class="aipostyle">
-			<h1>通常画面：</h1>
+			<h1>現在、告知事項はありません。</h1>
 		</div>
+		<script type="text/javascript">
+		gadgets.window.adjustHeight();
+		</script>
 		]]>
 	</Content>
 	<Content type="html" view="canvas"><![CDATA[
@@ -18,7 +22,7 @@
 			<input type="button" value="告知！">
 		</div>
 		<script type="text/javascript">
-			gadgets.util.registerOnLoadHandler();
+		gadgets.window.adjustHeight();
 		</script>
 		]]>
 	</Content>
