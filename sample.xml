@@ -4,9 +4,16 @@
 		title="ViewTest"
 		description="最大化と通常のViewのテスト。">
 		<Require feature="osapi"/>
-		<Optional feature="aipostyle">
+		<Optional feature="aipostyle"/>
 		<Require feature="viewer"/>
 	</ModulePrefs>
+	<Content type="html" view="home,canvas"><![CDATA[
+		<script type="text/javascript">
+		// Version
+		var version = "0.1";
+		</script>
+		]]>
+	</Content>
 	<Content type="html" view="home"><![CDATA[
 		通常画面のサイズ	
 		<script type="text/javascript">
