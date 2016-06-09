@@ -7,22 +7,8 @@
 		<Optional feature="aipostyle"/>
 		<Require feature="views"/>
 	</ModulePrefs>
-	<Content type="html" view="home,canvas"><![CDATA[
-		<script type="text/javascript">
-		// Version
-		var version = "0.1";
-		</script>
-		]]>
-	</Content>
 	<Content type="html" view="home"><![CDATA[
 		通常画面のサイズ	
-		<script type="text/javascript">
-			gadgets.util.registerOnLoadHandler(init);
-		</script>
-		]]>
-	</Content>
-	<Content type="html" view="canvas"><![CDATA[
-		最大化画面サイズ
 		<script type="text/javascript">
 			gadgets.util.registerOnLoadHandler(init);
 		</script>
