@@ -5,7 +5,7 @@
 		description="最大化と通常のViewのテスト。">
 		<Require feature="osapi"/>
 		<Optional feature="aipostyle"/>
-		<Require feature="viewer"/>
+		<Require feature="views"/>
 	</ModulePrefs>
 	<Content type="html" view="home,canvas"><![CDATA[
 		<script type="text/javascript">
