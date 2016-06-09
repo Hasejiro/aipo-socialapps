@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
 	<ModulePrefs 
-		title="Simple Chat"
-		description="簡単なチャットを楽しむやつ。テストアプリ">
+		title="ViewTest"
+		description="最大化と通常のViewのテスト。">
 		<Require feature="osapi"/>
 		<Optional feature="aipostyle">
+		<Require feature="viewer"/>
 	</ModulePrefs>
-	<Content type="html"><![CDATA[
-		Hello, <span id="user"></span>!
+	<Content type="html" view="home"><![CDATA[
+		通常画面のサイズ	
 		<script type="text/javascript">
-			function init() {
-				osapi.people.getViewer().execute(function (response) {
-					document.getElementById("user").innerHTML = response.displayName;
-				});
-			}
-
+			gadgets.util.registerOnLoadHandler(init);
+		</script>
+		]]>
+	</Content>
+	<Content type="html" view="canvas"><![CDATA[
+		最大化画面サイズ
+		<script type="text/javascript">
 			gadgets.util.registerOnLoadHandler(init);
 		</script>
 		]]>
