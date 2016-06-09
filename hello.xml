@@ -5,41 +5,17 @@
 		<Require feature="views"/>
 	</ModulePrefs>
 	<UserPref name="version" datatype="hidden"/>
-	<Content type="html" view="popup,home,canvas"><![CDATA[
-		<script type="text/javascript">
-		var version = "0.1";
-		</script>
-		]]>
-	</Content>
-	<Content type="html" view="popup"><![CDATA[
-		なにこれ
-		]]>
-	</Content>
 	<Content type="html" view="home"><![CDATA[
-		Hello, <span id="user"></span>!
 		通常画面テスト
 		<script type="text/javascript">
-			function init() {
-				osapi.people.getViewer().execute(function (response) {
-					document.getElementById("user").innerHTML = response.displayName;
-				});
-			}
-
-			gadgets.util.registerOnLoadHandler(init);
+			gadgets.util.registerOnLoadHandler();
 		</script>
 		]]>
 	</Content>
 	<Content type="html" view="canvas"><![CDATA[
-		Hello, <span id="user"></span>!
 		最大化状態テスト
 		<script type="text/javascript">
-			function init() {
-				osapi.people.getViewer().execute(function (response) {
-					document.getElementById("user").innerHTML = response.displayName;
-				});
-			}
-
-			gadgets.util.registerOnLoadHandler(init);
+			gadgets.util.registerOnLoadHandler();
 		</script>
 		]]>
 	</Content>
